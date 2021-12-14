@@ -1,0 +1,22 @@
+{
+  "name": "my_website_v2",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w --no-source-map sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-kowalewski/my_website_v2.git"
+  },
+  "author": "Tony Kowalewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-kowalewski/my_website_v2/issues"
+  },
+  "homepage": "https://github.com/t-kowalewski/my_website_v2#readme",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
