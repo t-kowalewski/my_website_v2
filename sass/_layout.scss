@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(4, [nav-start] 10rem [nav-end]) repeat(
+      8,
+      [cont-start] 10rem [cont-end]
+    );
+
+  grid-template-rows: repeat(4, 100vh);
+}
+
+.sidebar {
+  grid-column: nav-start 1 / nav-end 4;
+  grid-row: 1 / 2;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 17rem;
+    border-radius: 50%;
+    border: 3px solid $color-primary;
+    margin-bottom: 5rem;
+  }
+
+  .menu {
+    list-style: none;
+    font-size: 2.5rem;
+  }
+}
+
+.content {
+  grid-column: cont-start 1 / -1;
+  grid-row: 1 / -1;
+}

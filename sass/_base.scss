@@ -1,0 +1,39 @@
+// COLOR VARIABLES
+$color-primary: #cb3737;
+// $color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f0f0f0;
+$color-grey-light-2: #e3e3e3;
+
+$color-grey-dark-1: #392f2f;
+// $color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// GLOBAL RESET & STYLING
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px => 10px/16px
+
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: $color-grey-light-1;
+}
