@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>Tony Kowalewski - Web Developer</title>
@@ -18,10 +21,10 @@
       <img src="img/profile_pic.webp" alt="Tony Kowalewski">
 
       <ul class="menu">
-        <li class="menu__item"><a href="#start">Start</a></li>
-        <li class="menu__item"><a href="#skills">Skills</a></li>
-        <li class="menu__item"><a href="#work">My Work</a></li>
-        <li class="menu__item"><a href="#contact">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="#start">Start</a></li>
+        <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+        <li class="menu__item"><a class="menu__link" href="#work">My Work</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -29,10 +32,10 @@
     <div class="content">
       <!-- Start -->
       <section class="page" id="start">
-        <h2 class="page__title">Tony Kowalewski</h2>
+        <h2 class="page__title">Tony <span class="page__title--red">Kowalewski</span></h2>
 
         <div class="card">
-          <p class="card__text">Hi, I'm Tony 👋
+          <p class="card__text">Hi, I'm Tony 👋<br>
             Self-taught web developer based in Warsaw, Poland. I have a passion for development and love to create for
             web
             and
@@ -44,9 +47,9 @@
 
       <!-- Skills -->
       <section class="page" id="skills">
-        <h2 class="page__title">My Skills</h2>
+        <h2 class="page__title">My <span class="page__title--red">Skills</span></h2>
 
-        <div class="card">
+        <div class="card card--skills">
           <h3 class="card__title">Technology and tools a work with:</h3>
 
           <ul class="card__list">
@@ -67,9 +70,9 @@
 
       <!-- Work -->
       <section class="page" id="work">
-        <h2 class="page__title">My Work</h2>
+        <h2 class="page__title">My <span class="page__title--red">Work</span></h2>
 
-        <div class="card">
+        <div class="card card--work">
           <h3 class="card__title">Check out some of my projects</h3>
 
           <div class="project">

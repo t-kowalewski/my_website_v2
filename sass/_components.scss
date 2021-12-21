@@ -8,6 +8,18 @@
 .card {
   width: 80rem;
   height: 75%;
-  background-color: $color-grey-light-2;
+  background-color: $color-grey-light-1;
   border-radius: 5px;
+  border-bottom: solid 5px $color-secondary;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 2rem;
+    line-height: 1.5;
+    width: 75%;
+  }
 }

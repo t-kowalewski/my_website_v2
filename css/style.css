@@ -15,7 +15,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #e3e3e3;
   color: #392f2f;
 }
 
@@ -27,6 +27,7 @@ body {
 
 .sidebar {
   height: 100vh;
+  font-family: "Lato", sans-serif;
   grid-column: nav-start 1/nav-end 4;
   position: sticky;
   top: 0;
@@ -36,7 +37,7 @@ body {
   justify-content: center;
 }
 .sidebar img {
-  width: 17rem;
+  width: 15rem;
   border-radius: 50%;
   border: 3px solid #cb3737;
   margin-bottom: 5rem;
@@ -50,11 +51,19 @@ body {
 .sidebar .menu__item:not(:last-child) {
   margin-bottom: 2rem;
 }
+.sidebar .menu__link:link, .sidebar .menu__link:visited {
+  text-decoration: none;
+  color: #392f2f;
+}
+.sidebar .menu__link:hover, .sidebar .menu__link:active {
+  color: #cb3737;
+}
 
 .content {
   grid-column: cont-start 1/-1;
   display: grid;
   grid-template-rows: repeat(4, 100vh);
+  font-family: "Inconsolata", monospace;
 }
 .content .page {
   display: flex;
@@ -65,10 +74,26 @@ body {
 .content .page__title {
   align-self: flex-end;
   margin-bottom: 2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 4rem;
 }
+.content .page__title--red {
+  color: #cb3737;
+}
+
 .card {
   width: 80rem;
   height: 75%;
-  background-color: #e3e3e3;
+  background-color: #f0f0f0;
   border-radius: 5px;
+  border-bottom: solid 5px #cb3737;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__text {
+  font-size: 2rem;
+  line-height: 1.5;
+  width: 75%;
 }

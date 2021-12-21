@@ -1,8 +1,6 @@
 // COLOR VARIABLES
-$color-primary: #cb3737;
-// $color-primary-dark: #b28451;
-
-$color-secondary: #101d2c;
+$color-primary: #392f2f;
+$color-secondary: #cb3737;
 
 $color-grey-light-1: #f0f0f0;
 $color-grey-light-2: #e3e3e3;
@@ -11,8 +9,8 @@ $color-grey-dark-1: #392f2f;
 // $color-grey-dark-2: #6d5d4b;
 
 // FONT VARIABLES
-$font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-primary: 'Inconsolata', monospace;
+$font-secondary: 'Lato', sans-serif;
 
 // GLOBAL RESET & STYLING
 *,
@@ -35,6 +33,6 @@ html {
 body {
   display: flex;
   justify-content: center;
-  background-color: $color-grey-light-1;
-  color: $color-grey-dark-1;
+  background-color: $color-grey-light-2;
+  color: $color-primary;
 }
