@@ -26,7 +26,7 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px => 10px/16px
-
+  scroll-behavior: smooth;
   // @media only screen and (max-width: $bp-largest) {
   //   font-size: 50%;
   // }
