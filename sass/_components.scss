@@ -10,16 +10,43 @@
   height: 75%;
   background-color: $color-grey-light-1;
   border-radius: 5px;
-  border-bottom: solid 5px $color-secondary;
+  border-bottom: solid 3px $color-secondary;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  font-size: 2rem;
+  line-height: 1.5;
+
   &__text {
-    font-size: 2rem;
-    line-height: 1.5;
     width: 75%;
+  }
+
+  &--skills {
+    padding: 0 4rem;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 2.5rem;
+
+    justify-content: center;
+    align-content: center;
+
+    justify-items: center;
+
+    .card__title {
+      grid-column: 1 / -1;
+      // padding: 2rem 0;
+      font-weight: 400;
+      // font-family: $font-secondary;
+    }
+
+    .card__list {
+      list-style: none;
+    }
   }
 }

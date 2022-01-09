@@ -86,14 +86,31 @@ body {
   height: 75%;
   background-color: #f0f0f0;
   border-radius: 5px;
-  border-bottom: solid 5px #cb3737;
+  border-bottom: solid 3px #cb3737;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.card__text {
   font-size: 2rem;
   line-height: 1.5;
+}
+.card__text {
   width: 75%;
+}
+.card--skills {
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 2.5rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+.card--skills .card__title {
+  grid-column: 1/-1;
+  font-weight: 400;
+}
+.card--skills .card__list {
+  list-style: none;
 }
